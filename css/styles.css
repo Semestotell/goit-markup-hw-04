@@ -164,6 +164,7 @@ color: #000;
   padding-bottom: 60px;
   background-color: var(--footer-background-color);
 }
+
 .footer-link-logo:active,
 .footer-link-logo:hover,
 .footer-link-logo {
@@ -184,7 +185,6 @@ color: #000;
 .footer-address-list .item:not(:last-child){
   margin-bottom: 9px;
 }
-
 .footer-contscts:active,
 .footer-contscts:visited,
 .footer-contacts {
@@ -200,6 +200,42 @@ color: #000;
   line-height: 1.71;
   font-style: normal  ;
   color: var(--city-color);
+}
+.foot-soc-list{
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.foot-soc-list .item+.item{
+  margin-left: 10px;
+}
+.foot-soc{
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #fff;
+}
+.foot-soc:hover{
+  background-color: #2196f3;
+}
+.contact-wrap .container{
+  display: flex;
+}
+.join{
+  margin-left: 70px;
+}
+.join-title{
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 /********************************************INDEX******************************************/
