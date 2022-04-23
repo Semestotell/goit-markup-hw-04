@@ -237,6 +237,15 @@ color: #000;
   margin-bottom: 20px;
   color: #fff;
 }
+auth-nav .item{
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.phone,
+.mail{
+  margin-right: 10px;
+}
 
 /********************************************INDEX******************************************/
 .hero{
@@ -513,6 +522,10 @@ box-shadow: 0px 0px 0px ;
   background-color:var(--hover-color);
   color:var(--hover-hover-button-color);
   cursor: pointer;
+  
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projects-list{
   margin:0;
@@ -526,11 +539,14 @@ box-shadow: 0px 0px 0px ;
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  
 }
-
-.projects-list .item:nth-child(3n){
-  margin-right: 0;
-  margin-bottom: 0;
+.projects-list :focus,
+.projects-list :hover{
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-list .item:nth-last-child(-n+3){
