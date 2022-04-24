@@ -287,15 +287,7 @@ auth-nav .item{
   cursor: pointer;
   letter-spacing: 0.06em;
 }
-.info-img-list{
-  display: flex;
-  padding-left: 0;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-.info-img{
-  fill: #000;
-}
+
 .info-img-list .item{
   display: flex;
   justify-content: center;
@@ -304,8 +296,14 @@ auth-nav .item{
   height: 120px;
   background-color: #f5f4fa;
 }
-.info-img-list .item+.item{
-  margin-left: 30px;
+.img{
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
 }
 .information-list{
   display: flex;
@@ -447,6 +445,7 @@ box-shadow: 0px 0px 0px ;
 }
 .clients-title{
   margin: 0;
+  margin-bottom: 50px;
 
   font-size: 36px;
   line-height: 1.16;
@@ -460,7 +459,7 @@ box-shadow: 0px 0px 0px ;
   padding-left: 0;
 }
 .clients-list .item{
-  margin-top: 50px;
+
   background-color: #fff;
 }
 .clients-list .item+.item{
@@ -541,8 +540,16 @@ box-shadow: 0px 0px 0px ;
   margin-bottom: 30px;
   
 }
-.projects-list :focus,
 .projects-list :hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.projects-list .item :nth-child(1n){
+  box-shadow: none;
+}
+.card :focus,
+.card :hover{
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
